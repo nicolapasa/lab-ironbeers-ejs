@@ -1,0 +1,15 @@
+<div class="beers">
+
+<div class="beer-random">
+    <%- include('./partials/beer.ejs', {beer }) %>
+        <strong>Food Pairing</strong>
+        <ul>    <% beer.food_pairing.forEach(food => { %>  
+            <li><%- food %>  </li>
+            <%   }); %>  
+        
+        
+    </ul>
+    <p>  <strong>Brewer tips:</strong>  <%- beer.brewers_tips %>   </p>
+     </div> 
+  </div>
+  </div>

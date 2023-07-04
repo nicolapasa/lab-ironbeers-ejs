@@ -1,0 +1,17 @@
+
+
+
+    <div class="beers"><% data.forEach(beer => { %>
+      <div class="beer">
+        <%- include('./partials/beer.ejs', {beer }) %>
+
+        <a class="beer-link" href="/<%- beer.id %>"><%- beer.name %></a>
+       
+         </div> 
+      </div>
+        
+    
+        <%   }); %></div>
+
+
+  
